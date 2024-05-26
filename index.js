@@ -1,15 +1,22 @@
 let saveEl = document.getElementById("save-el")
-let countEl = document.getElementById("count-el")
-let count = 0
+let repeatCountEl = document.getElementById("repeat-count-el")
+let rowCountEl = document.getElementById("row-count-el")
+let repeatCount = 0
+let rowCount = 0
 
-function increment() {
-    count += 1
-    countEl.textContent = count
+function incrementRepeat() {
+    repeatCount += 1
+    repeatCountEl.textContent = repeatCount
+}
+
+function incrementRow() {
+    rowCount += 1
+    rowCountEl.textContent = rowCount
 }
 
 function save() {
-    let countStr = count + " - "
+    let countStr = "Rows: " + rowCount + " - "
     saveEl.textContent += countStr
-    countEl.textContent = 0
-    count = 0
+    rowCountEl.textContent = 0
+    rowCount = 0
 }

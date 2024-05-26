@@ -1,17 +1,16 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div class="container">
-            <h1>Row Counter</h1>
-            <h2 id="count-el">0</h2>
-            <button id="increment-btn" onclick="increment()">INCREMENT</button>
-            <button id="save-btn" onclick="save()">SAVE</button>
-            <p id="save-el">Previous entries: </p>
-        </div>
-        <script src="index.js">
-            nnerText
-        </script>
-    </body>
+  <head>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="app-container">
+      <h1>Row and Repeat Counter</h1>
+      <h2 id="count-el">Repeats: <span id="repeat-count-el">0</span> | Rows: <span id="row-count-el">0</span></h2>
+      <button id="increment-repeat-btn" onclick="incrementRepeat()">Increment Repeat</button>
+      <button id="increment-row-btn" onclick="incrementRow()">Increment Row</button>
+      <button id="save-btn" onclick="save()">Save Row</button>
+      <p id="save-el">Previous entries: </p>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>

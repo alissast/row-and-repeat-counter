@@ -1,17 +1,21 @@
 body {
     background-image: url("yarn.jpeg");
     background-size: cover;
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:  Roboto, BlinkMacSystemFont, -apple-system, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
     text-align: center;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
-.container {
-    background: white;
-    max-width: 80%;
-    margin: auto;
-    border: 3px solid black;
+.app-container {
+    max-width: 85%;
+    border: 3px solid indigo;
     border-radius: 10px;
+    background-color: white;
 }
 
 h1 {
@@ -20,13 +24,21 @@ h1 {
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 35px;
     margin-top: 0;
     margin-bottom: 20px;
 }
 
+#repeat-count-el {
+    color: darkred;
+}
+
+#row-count-el {
+    color: indigo;
+}
+
 button {
-    border: 1px solid black;
+    border: none;
     padding-top: 10px;
     padding-bottom: 10px;
     color: white;
@@ -36,15 +48,13 @@ button {
     border-radius: 5px;
 }
 
-#increment-btn {
-    background: #2C2891;
+#increment-row-btn {
+    background: indigo;
+}
+#increment-repeat-btn {
+    background: darkred;
 }
 
 #save-btn {
-    background: #1C7947;
+    background: darkgreen;
 }
-
-#save-el {
-    font-weight: bold;
-}
-
